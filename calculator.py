@@ -12,19 +12,11 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero")
     return a / b
 
-if __name__ == "__main__":
-    print("Simple Calculator")
-    a = float(input("Enter first number: "))
-    op = input("Enter operation (+, -, *, /): ")
-    b = float(input("Enter second number: "))
+a = 20
+b = 10
 
-    if op == "+":
-        print("Result:", add(a, b))
-    elif op == "-":
-        print("Result:", subtract(a, b))
-    elif op == "*":
-        print("Result:", multiply(a, b))
-    elif op == "/":
-        print("Result:", divide(a, b))
-    else:
-        print("Invalid operation")
+print("Addition =", add(a, b))
+print("Subtraction =", subtract(a, b))
+print("Multiplication =", multiply(a, b))
+print("Division =", divide(a, b))
+print("Modulus =", a % b)
